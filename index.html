@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/css/screen.css" rel="stylesheet" />
+    <title>Chen & Han</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="js/Vertex.js"></script>
+    <script src="js/Edge.js"></script>
+    <script src="js/Face.js"></script>
+    <script src="js/Projection.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/display.js"></script>
+    <script src="js/chenHan.js"></script>
+    <script src="sketch.js"></script>
+    <button onclick="switchDisplay()" id="button1">Flatten</button>
+    <button onclick="resetAll()" id="button2">Reset</button>
+    <select id="selectButton" onchange="loadPoly()">
+      <option value="polyhedrons/cube.obj">Cube</option>
+      <option value="polyhedrons/tetrahedron.obj">Tetrahedron</option>
+      <option value="polyhedrons/octahedron.obj">Octahedron</option>
+      <option value="polyhedrons/icosahedron.obj" selected="selected"
+        >Icosahedron</option
+      >
+      <option value="polyhedrons/dodecahedron.obj">Dodecahedron</option>
+    </select>
+  </body>
+</html>
